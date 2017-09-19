@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <title>Speedtest</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .st-block {
+            text-align: center;
+        }
+        .st-btn {
+            margin-top: -0.5rem;
+            margin-left: 1.5rem;
+        }
+        .st-value>span:empty::before {
+            content: "0.00";
+            color: #636c72;
+        }
+        #st-ip:empty::before {
+            content: "___.___.___.___";
+            color: #636c72;
+        }
+		[class*="col-"] {
+			padding: 15px;
+			background-color: #f1f1f1;
+			border: 1px solid #D8D8D8;
+			margin-bottom: 0.5rem!important;
+		}
+		button {
+		    margin-bottom: 1rem!important;
+			
+		}
+    </style>
+</head>
+
+<body class="my-4">
+    <div class="container">
+        <div class="row">
+		
+		<!Header Area>	
+		
+            <div class="col-sm-12 mb-3">
+                <p class="h1">
+                    Internet Speed Checker
+					<p>Test your Internet connection bandwidth to locations around the world with this interactive broadband speed test</p>
+                </p>
+				 <p class="lead">
+                    Your IP: <span id="st-ip"></span>
+                </p>
+            </div>
+		</div>
+		<!Content Area>			
+			<div class="row">
+		
+				<div class="col-md-1 st-value">
+					<div class="row">
+					
+						<p><b>This Internet Speed Checker measures download speed, upload speed, ping and jitter.</b></p>
+				
+					</div>	
+				</div>	
+				<div class="col-md-8  st-value">
+					
+					<div class="row">
+						<button id="st-start" class="btn btn-outline-primary st-btn col-md-10" onclick="startTest()">Start</button>
+						<button id="st-stop" class="btn btn-danger st-btn col-md-10" onclick="stopTest()" hidden="true">Stop</button>
+					</div>
+					<div class="row">
+						
+						<div class="col-md-6">
+							<h3>Download</h3>
+							<p class="display-4 st-value"><span id="st-download"></span></p>
+							<p class="lead">Mbit/s</p>
+						</div>
+						<div class="col-md-6">
+							<h3>Upload</h3>
+							<p class="display-4 st-value"><span id="st-upload"></span></p>
+							<p class="lead">Mbit/s</p>
+						</div>
+						
+						</div>
+						<div class="row">
+						
+						<div class="col-md-6">
+							<h3>Ping</h3>
+							<p class="display-4 st-value"><span id="st-ping"></span></p>
+							<p class="lead">ms</p>
+						</div>
+						<div class="col-md-6">
+							<h3>Jitter</h3>
+							<p class="display-4 st-value"><span id="st-jitter"></span></p>
+							<p class="lead">ms</p>
+						</div>
+					
+					</div>
+					<div class="row">
+					<div data-WRID="WRID-150567034190147622" data-widgetType="Push Content"  data-class="affiliateAdsByFlipkart" height="90" width="728"></div><script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
+					</div>
+				</div>
+
+				<div class="col-md-3  st-value">
+					<div class="row">
+						<div data-WRID="WRID-150366558652029124" data-widgetType="Push Content"  data-class="affiliateAdsByFlipkart" height="250" width="280"></div><script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
+					</div>
+					<div class="row">
+						<div data-WRID="WRID-150567150070363749" data-widgetType="staticBanner" data-responsive="yes" data-class="affiliateAdsByFlipkart" height="250" width="300"></div><script async src="//affiliate.flipkart.com/affiliate/widgets/FKAffiliateWidgets.js"></script>
+					</div>
+				</div>
+			
+			</div>
+			
+			<div class="row">
+		
+		<!Footer Area>	
+		
+				<div class="col-sm-12 mb-3 ">
+					<p class="h1">
+						<p style="text-align:center">Powered by <a href="#" title="Contact US!" data-toggle="modal" data-target="#myModal">Manikandan Siva</a> © 2017 </p>  
+					</p>
+					 
+				</div>
+			</div>
+           <!-- Trigger the modal with a button -->
+ 
+			  <!-- Modal -->
+			  <div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+				
+				  <!-- Modal content-->
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <button type="button" class="close" data-dismiss="modal">&times;</button>
+					  <h4 class="modal-title">Contact Us</h4>
+					</div>
+					<div class="modal-body">
+					  <p><a href="mailto:support@ISC.thetoolerviews.in">Click here</a> to mail us @ support@ISC.thetoolerviews.in</p>
+					</div>
+					<div class="modal-footer">
+					  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				  </div>
+				  
+				</div>
+			  </div> 
+        </div>
+		
+    
+
+    <script type="text/javascript">
+        var worker = null
+        function startTest() {
+            document.getElementById('st-start').hidden = true
+            document.getElementById('st-stop').hidden = false
+            worker = new Worker('speedtest_worker.min.js')
+            var interval = setInterval(function () { worker.postMessage('status') }, 100)
+            worker.onmessage = function (event) {
+                var download = document.getElementById('st-download')
+                var upload = document.getElementById('st-upload')
+                var ping = document.getElementById('st-ping')
+                var jitter = document.getElementById('st-jitter')
+                var ip = document.getElementById('st-ip')
+
+                var data = event.data.split(';')
+                var status = Number(data[0])
+                if (status >= 4) {
+                    clearInterval(interval)
+                    document.getElementById('st-start').hidden = false
+                    document.getElementById('st-stop').hidden = true
+                    w = null
+                }
+                if (status === 5) {
+                    // speedtest cancelled, clear output data
+                    data = []
+                }
+                download.textContent = (status==1&&data[1]==0)?"Starting":data[1]
+                upload.textContent = (status==3&&data[2]==0)?"Starting":data[2]
+                ping.textContent = data[3]
+                ip.textContent = data[4]
+                jitter.textContent = data[5]
+            }
+            worker.postMessage('start {"telemetry_level":"basic"}')
+        }
+        function stopTest() {
+            if (worker) worker.postMessage('abort')
+        }
+    </script>
+
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106630771-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106630771-1');
+</script>
+
+
+</body>
+</html>

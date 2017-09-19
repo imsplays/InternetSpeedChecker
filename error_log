@@ -1,0 +1,30 @@
+[17-Sep-2017 12:36:52 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 12:36:52 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 12:39:19 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 12:39:19 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 12:40:18 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 12:40:18 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 12:41:13 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 12:41:13 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 12:42:58 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 12:42:58 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 12:44:55 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 12:44:55 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 12:58:21 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 12:58:21 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 13:00:32 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 13:00:32 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 13:11:27 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 13:11:27 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 13:41:24 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 13:41:24 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 13:41:43 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 13:41:43 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[17-Sep-2017 13:41:51 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[17-Sep-2017 13:41:51 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[18-Sep-2017 01:36:38 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[18-Sep-2017 01:36:38 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[19-Sep-2017 09:05:40 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[19-Sep-2017 09:05:40 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
+[19-Sep-2017 09:05:41 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/2005): Unknown MySQL server host 'DB_HOSTNAME' (0) in /home/imsplays/public_html/theviewertools/telemetry.php on line 20
+[19-Sep-2017 09:05:41 America/Chicago] PHP Warning:  mysqli::prepare(): Couldn't fetch mysqli in /home/imsplays/public_html/theviewertools/telemetry.php on line 21
