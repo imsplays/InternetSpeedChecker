@@ -4,8 +4,16 @@
     <meta charset="utf-8" />
     <meta name="referrer" content="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
-    <title>Speedtest</title>
-
+    <title>INTERNET SPEED CHECKER FROM THEVIEWERTOOLS.IN</title>
+	  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+	  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+	  <meta property="og:title" content="Internet Speed Checker - The Broadband Speed Test">
+	  <meta property="og:description" content="Wanna know your Internet bandwidth. Anywhere and anytime. Just a click">
+	  <meta property="og:type" content="website">
+	  <meta property="og:site_name" content="Theviewertools.in">
+	  <meta property="og:url" content="http://theviewertools.in/">
+	  <meta property="og:image" content="//b.cdnst.net/images/share-logo.png">
+	  <meta name="description" content="Wanna know your Internet bandwidth. Anywhere and anytime. Just a click">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -45,11 +53,13 @@
 		<!Header Area>	
 		
             <div class="col-sm-12 mb-3">
-                <p class="h1">
+			
+			
+                <a class="navbar-brand" href="http://theviewertools.in" alt="theviewertools.in"><p class="h1">
                     Internet Speed Checker
-					<p>Test your Internet connection bandwidth to locations around the world with this interactive broadband speed test</p>
-                </p>
-				 <p class="lead">
+					<p>Anywhere and anytime. Just a click!!!</p>
+                </p></a>
+				 <p class="lead" id="IP-Address" hidden="true">
                     Your IP: <span id="st-ip"></span>
                 </p>
             </div>
@@ -155,6 +165,7 @@
         function startTest() {
             document.getElementById('st-start').hidden = true
             document.getElementById('st-stop').hidden = false
+            document.getElementById('IP-Address').hidden = false
             worker = new Worker('speedtest_worker.min.js')
             var interval = setInterval(function () { worker.postMessage('status') }, 100)
             worker.onmessage = function (event) {
